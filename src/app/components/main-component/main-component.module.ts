@@ -2,11 +2,11 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {RouterModule} from "@angular/router";
 import {MainComponentComponent} from "./main-component.component";
-import {AppModule} from "../../app.module";
 import {Example1Component} from "../example1/example1.component";
-import {AppRoutingModule} from "../../app-routing.module";
 import {CakesComponent} from "../cakes/cakes.component";
 import {PartOneDirective} from "../../directivies/part-one.directive";
+import {PartTwoDirective} from "../../directivies/part-two.directive";
+import {SweetsComponent} from "../sweets/sweets.component";
 
 @NgModule({
     declarations: [
@@ -14,6 +14,8 @@ import {PartOneDirective} from "../../directivies/part-one.directive";
         Example1Component,
         CakesComponent,
         PartOneDirective,
+        PartTwoDirective,
+        SweetsComponent,
     ],
     imports: [
         CommonModule,
