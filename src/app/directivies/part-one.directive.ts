@@ -5,6 +5,6 @@ import {Directive, TemplateRef} from '@angular/core';
 })
 export class PartOneDirective {
 
-  constructor(public templateRef: TemplateRef<unknown>) {}
+  constructor() {}
 
 }

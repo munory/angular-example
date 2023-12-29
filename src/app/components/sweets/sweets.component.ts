@@ -1,5 +1,6 @@
 import {Component, ContentChild, OnInit} from '@angular/core';
 import {PartOneDirective} from "../../directivies/part-one.directive";
+import {PartOneTemplateDirective} from "../../directivies/part-one-template.directive";
 
 @Component({
   selector: 'app-sweets',
@@ -8,7 +9,7 @@ import {PartOneDirective} from "../../directivies/part-one.directive";
 })
 export class SweetsComponent implements OnInit {
 
-  @ContentChild(PartOneDirective) partOne!: PartOneDirective;
+  @ContentChild(PartOneTemplateDirective) partOne!: PartOneTemplateDirective;
 
   constructor() { }
 

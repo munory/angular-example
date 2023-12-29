@@ -4,17 +4,16 @@ import {RouterModule} from "@angular/router";
 import {MainComponentComponent} from "./main-component.component";
 import {Example1Component} from "../example1/example1.component";
 import {CakesComponent} from "../cakes/cakes.component";
-import {PartOneDirective} from "../../directivies/part-one.directive";
-import {PartTwoDirective} from "../../directivies/part-two.directive";
 import {SweetsComponent} from "../sweets/sweets.component";
+import {DirectiviesModule} from "../../directivies/directivies.module";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
     declarations: [
         MainComponentComponent,
         Example1Component,
         CakesComponent,
-        PartOneDirective,
-        PartTwoDirective,
         SweetsComponent,
     ],
     imports: [
@@ -25,7 +24,11 @@ import {SweetsComponent} from "../sweets/sweets.component";
                 component: MainComponentComponent,
             },
         ]),
-    ]
+        DirectiviesModule,
+        ReactiveFormsModule,
+        FormsModule,
+        HttpClientModule,
+    ],
 })
 export class MainComponentModule {
 }

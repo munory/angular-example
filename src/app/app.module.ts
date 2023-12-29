@@ -16,6 +16,7 @@ import {StoreDevtoolsModule} from "@ngrx/store-devtools";
 import {environment} from "@env/environment";
 import {AppRoutingModule} from "./app-routing.module";
 import {NzMessageModule} from "ng-zorro-antd/message";
+import {DirectiviesModule} from "./directivies/directivies.module";
 
 @NgModule({
     declarations: [
@@ -37,8 +38,8 @@ import {NzMessageModule} from "ng-zorro-antd/message";
         NzTableModule,
         NzDividerModule,
         StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
-        HttpClientModule,
-        NzMessageModule
+        NzMessageModule,
+        //DirectiviesModule,
     ],
     providers: [],
     exports: [
