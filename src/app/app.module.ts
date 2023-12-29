@@ -41,7 +41,8 @@ import {NzMessageModule} from "ng-zorro-antd/message";
         NzMessageModule
     ],
     providers: [],
-    exports: [],
+    exports: [
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {
