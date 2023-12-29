@@ -23,8 +23,6 @@ import {PartOneDirective} from "../../directivies/part-one.directive";
                 component: MainComponentComponent,
             },
         ]),
-        AppModule,
-        AppRoutingModule,
     ]
 })
 export class MainComponentModule {
