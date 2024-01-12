@@ -16,11 +16,12 @@ import {StoreDevtoolsModule} from "@ngrx/store-devtools";
 import {environment} from "@env/environment";
 import {AppRoutingModule} from "./app-routing.module";
 import {NzMessageModule} from "ng-zorro-antd/message";
-import {InnerComponent} from './components/inner/inner.component';
+import { Example3Component } from './components/example3/example3.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        Example3Component,
     ],
     imports: [
         AppRoutingModule,
@@ -38,9 +39,12 @@ import {InnerComponent} from './components/inner/inner.component';
         NzTableModule,
         NzDividerModule,
         StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
-        NzMessageModule,
+        HttpClientModule,
+        NzMessageModule
     ],
     providers: [],
+    exports: [
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -8,7 +8,7 @@ import {SweetsComponent} from "../sweets/sweets.component";
 import {DirectiviesModule} from "../../directivies/directivies.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-import {InnerComponent} from "../inner/inner.component";
+import {Example2Component} from "../example2/example2.component";
 
 @NgModule({
     declarations: [
@@ -16,7 +16,7 @@ import {InnerComponent} from "../inner/inner.component";
         Example1Component,
         CakesComponent,
         SweetsComponent,
-        InnerComponent,
+        Example2Component
     ],
     imports: [
         CommonModule,
